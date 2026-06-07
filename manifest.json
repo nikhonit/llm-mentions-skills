@@ -1,0 +1,26 @@
+{
+  "name": "llm-mentions-skills",
+  "version": "1.0.0",
+  "description": "Agent skills for AI brand-visibility tracking via MentionsAPI.com",
+  "author": "MentionsAPI",
+  "homepage": "https://mentionsapi.com",
+  "repository": "https://github.com/nikhonit/llm-mentions-skills",
+  "license": "MIT-0",
+  "skills": [
+    {
+      "name": "mentions-full",
+      "path": "skills/mentions-full",
+      "description": "Complete AI brand-visibility toolkit — check mentions/ranks/citations across ChatGPT, Claude, Gemini, Perplexity, AI Overviews, AI Mode, and Bing Copilot, discover queries to track, compare brands, and watch for changes."
+    },
+    {
+      "name": "mentions-check",
+      "path": "skills/mentions-check",
+      "description": "Check whether a brand is mentioned, ranked, and cited across AI search surfaces in one call. 8 modes from $0.02."
+    },
+    {
+      "name": "mentions-discover",
+      "path": "skills/mentions-discover",
+      "description": "Suggest ~50 queries worth tracking for a brand, spanning informational, commercial, and comparison intents."
+    }
+  ]
+}

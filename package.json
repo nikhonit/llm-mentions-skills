@@ -1,0 +1,32 @@
+{
+  "name": "llm-mentions-skills",
+  "version": "1.0.0",
+  "description": "Agent skills for AI brand-visibility tracking via MentionsAPI.com",
+  "homepage": "https://github.com/nikhonit/llm-mentions-skills",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikhonit/llm-mentions-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nikhonit/llm-mentions-skills/issues"
+  },
+  "author": "MentionsAPI",
+  "license": "MIT-0",
+  "keywords": [
+    "mentionsapi",
+    "geo",
+    "generative-engine-optimization",
+    "answer-engine-optimization",
+    "ai-visibility",
+    "brand-monitoring",
+    "agent-skills",
+    "mcp",
+    "llm",
+    "chatgpt",
+    "claude",
+    "gemini",
+    "perplexity",
+    "ai-overviews",
+    "cursor"
+  ]
+}
