@@ -61,7 +61,7 @@ Example response:
 ```json
 {
   "brand": "Linear",
-  "queries": [
+  "candidates": [
     { "query": "best project management tool for engineers", "intent": "commercial" },
     { "query": "Linear vs Jira",                              "intent": "comparison" },
     { "query": "what is Linear used for",                     "intent": "informational" }

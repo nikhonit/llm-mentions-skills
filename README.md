@@ -9,14 +9,15 @@ Pure Python standard library. No dependencies. MIT-0 licensed.
 ## Install
 
 ```bash
-# OpenClaw (via ClawHub)
-npx clawhub@latest install mentions-full
+# Claude Code, Cursor, Cline, etc. — open `skills` CLI, installs straight from this repo
+npx skills add nikhonit/llm-mentions-skills --all
+# or pick one: npx skills add nikhonit/llm-mentions-skills --skill mentions-full
 
-# Hermes Agent
-hermes skills install skills-sh/nikhonit/llm-mentions-skills/skills/mentions-full
+# OpenClaw / ClawHub — published to the ClawHub registry
+npx clawhub@latest install mentions-full   # also: mentions-check, mentions-discover
 
-# Generic agent skills (Claude Code, Cursor, Cline)
-npx skills add nikhonit/llm-mentions-skills
+# Hermes Agent — direct from this GitHub repo
+hermes skills install nikhonit/llm-mentions-skills/skills/mentions-full
 ```
 
 ## Skills in this repo
