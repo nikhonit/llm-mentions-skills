@@ -66,6 +66,8 @@ Compute the delta between two brands (same query) or two queries (same brand). A
 ### `watch_brand` — $1 per run
 Create a persistent monitor that calls an HMAC-signed webhook when mentions, rank, or citations change. Args: `query` (required), `brand` (required), `webhook_url` (required), `webhook_secret` (required, ≥16 chars), `mode` (default `quick`), `interval` (`hourly` | `daily` | `weekly`, default `daily`), `trigger_on` (subset of `mention_added`, `mention_removed`, `rank_changed`, `citation_changed`). You must host the webhook endpoint; billing is per scheduled run.
 
+**Security — read before using `watch_brand`:** the webhook receives your brand-visibility data (sensitive competitive intelligence). Use an **HTTPS** endpoint you control and never point it at a third party you don't trust. Every delivery is HMAC-signed with `webhook_secret` — **verify that signature on every request** and reject unsigned, altered, or replayed deliveries (check the timestamp/nonce). Treat `webhook_secret` like a password: ≥16 characters, stored securely, rotated if leaked.
+
 ## Authentication
 
 Set `MENTIONSAPI_KEY` to your MentionsAPI key. Keys are `lvk_live_...` strings.

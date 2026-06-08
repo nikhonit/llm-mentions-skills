@@ -9,7 +9,7 @@ import os
 import urllib.error
 import urllib.request
 
-API_BASE = os.environ.get("MENTIONSAPI_URL", "https://api.mentionsapi.com").rstrip("/")
+API_BASE = "https://api.mentionsapi.com"  # hardcoded: the API key is never sent to any other host
 USER_AGENT = "llm-mentions-skills/1.0.0 (+https://github.com/nikhonit/llm-mentions-skills)"
 TIMEOUT_SECONDS = 60
 

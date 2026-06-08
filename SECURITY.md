@@ -14,7 +14,7 @@ The handlers in this repository use only the Python standard library:
 - `json` — request/response serialization
 - `os` — reading the `MENTIONSAPI_KEY` environment variable
 
-There are no third-party packages, no transitive dependencies, and no build step. The only network destination is `https://api.mentionsapi.com` (overridable via `MENTIONSAPI_URL` for self-hosted/proxy setups).
+There are no third-party packages, no transitive dependencies, and no build step. The only network destination is `https://api.mentionsapi.com` — the base URL is **hardcoded**, so your `MENTIONSAPI_KEY` can never be transmitted to any other host.
 
 ## Credential handling
 
